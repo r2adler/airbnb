@@ -11,6 +11,7 @@ export const SelectedCategory = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10 mx-auto w-3/5 mb-32">
+      <input type="hidden" name="categoryName" value={selectedCategory as string} /> {/* ?? */}
       {categoryItems.map((item) => (
         <div className="cursor-pointer" key={item.id}>
           <Card
